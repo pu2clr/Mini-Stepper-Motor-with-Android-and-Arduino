@@ -305,9 +305,9 @@ public class BluetoothService {
             // Get a BluetoothSocket for a connection with the
             // given BluetoothDevice
             try {
-                // tmp = device.createRfcommSocketToServiceRecord(MY_UUID);
+                tmp = device.createRfcommSocketToServiceRecord(MY_UUID);
             	// The command below does not work on Android 4.0.3.
-            	tmp = device.createInsecureRfcommSocketToServiceRecord(MY_UUID);
+            	// tmp = device.createInsecureRfcommSocketToServiceRecord(MY_UUID);
             } catch (IOException e) {
             }
             mmSocket = tmp;
